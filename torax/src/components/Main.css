@@ -1,0 +1,197 @@
+/* General layout styles */
+.Todo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
+  
+  .main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    gap: 20px;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .column {
+    flex: 1;
+    min-width: 350px;
+  }
+  
+  .column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .patient-info-form {
+    padding: 10px; /* Agregado un espacio alrededor del formulario */
+    text-align: left;
+  }
+  
+  .patient-info-form h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px #2c3333;
+    margin-bottom: 30px;
+  }
+  
+  /* Buttons styles */
+  .buttons-container {
+    text-align: center;
+  }
+  
+  .buttons-container button {
+    display: block;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 200px;
+    background-color: #193d3d;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 24px;
+  }
+  
+  button[type="button"]:hover {
+    background-color: #143131;
+  }
+  
+  /* Result section styles */
+  
+  .resultado-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  
+  .resultado-container h2 {
+    color: #2c3333;
+    font-size: 2.3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  
+  /* Form styles */
+  .form-details {
+    border: 1px solid #ccc;
+    padding: 50px;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    text-align: left;
+    margin-top: 70px;
+    font-size: 19px;
+  }
+  
+  .form-details h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+
+  label {
+    display: block;
+    font-weight: 400;
+    color: #eeeeee;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="date"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #2c3333;
+    border-radius: 5px;
+    font-weight: 200;
+    font-style: italic;
+    color: #2c3333;
+  }
+  
+  /* Other styles */
+  .select-styling {
+    appearance: button;
+  }
+  
+  .select-styling::-ms-expand {
+    display: none;
+  }
+  
+  textarea {
+    height: 100px;
+    resize: vertical;
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .form-group {
+    margin-bottom: 15px; /* Espacio debajo de cada grupo de formulario */
+    text-align: left; /* Alinea el texto a la izquierda */
+  }
+  
+  .form-group label {
+    display: block; /* Hace que el label ocupe su propia línea */
+    margin-bottom: 5px; /* Espacio entre el label y el input/select debajo */
+    font-weight: bold; /* Hace el texto del label más grueso */
+  }
+  
+  .form-group select {
+    width: 100%; /* Hace que el select ocupe todo el ancho disponible */
+    padding: 8px; /* Agrega algo de padding dentro del select para mejor apariencia */
+    border: 1px solid #ccc; /* Borde sutil */
+    border-radius: 4px; /* Bordes ligeramente redondeados */
+    margin-bottom: 10px; /* Espacio debajo del select */
+  }
+  
+  
+
+ 
+  /* Submit button styles */
+  button[type="submit"] {
+    width: 180px;
+    height: 50px;
+    background-color: #193d3d;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 22px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #143131;
+  }
+  
+  

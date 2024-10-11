@@ -1,0 +1,106 @@
+/* En Basededatos.css */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  background-color: white;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #739274;
+}
+
+/* En Basededatos.css */
+.green-button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.red-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+.patient-info-form {
+  padding: 10px; /* Agregado un espacio alrededor del formulario */
+  text-align: left;
+}
+
+.patient-info-form h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  -webkit-text-stroke: 2px #2c3333;
+  margin-bottom: 30px;
+}
+
+/* En Basededatos.css */
+.form-title {
+  text-align: center;
+  position: sticky;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  -webkit-text-stroke: 2px #2c3333;
+  margin-bottom: 30px;
+}
+
+.patient-info-container {
+  max-height: 700px; /* Tamaño fijo del contenedor */
+  overflow-y: auto; /* Agregar desplazamiento vertical si es necesario */
+  padding-right: 15px; /* Evitar que el contenido se solape con la barra de desplazamiento */
+}
+
+.table-container {
+  width: 100%;
+}
+
+.fixed-header th {
+  position: sticky;
+  top: 0;
+  background-color: #f8f9fa; /* Cambia esto al color de fondo deseado */
+  z-index: 1;
+}
+

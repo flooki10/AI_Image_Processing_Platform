@@ -1,0 +1,64 @@
+
+from flask import Flask
+from flask_mysqldb import MySQL
+from flask import request, jsonify
+
+#configuracion de la base de datos mysql
+app.config['MYSQL_HOST']= 'localhost'
+app.config['MYSQL_USER']= 'root'
+app.config['MYSQL_PASSWORD']='' 
+app.config['MYSQL_DB']='tfg'
+
+mysql= MySQL(app)
+
+@app.route('/')
+def index():
+    cur = mysql.connection.cursor()
+    cur.execute("SELECT * FROM pacientes ")
+    datos = cur.fetchall()
+    cur.close()
+    return str(datos)
+
+from flask import jsonify
+
+@app.route('/agregar_paciente', methods=['POST'])
+def agregar_paciente():
+    datos = request.json
+    print(datos)
+    try:
+        cur = mysql.connection.cursor()
+        cur.execute("INSERT INTO pacientes(numeroExamen, Ndehistoriaclinica, nombre, apellido, genero, Fechadenacimiento, tipoExamen, diagnostico) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)", (datos['numeroExamen'], datos['Ndehistoriaclinica'], datos['nombre'], datos['apellido'], datos['genero'], datos['Fechadenacimiento'], datos['tipoExamen'], datos['diagnostico']))
+        mysql.connection.commit()
+        cur.close()
+        return jsonify({"mensaje": "Paciente agregado exitosamente"}), 201
+    except Exception as e:
+        print(e)
+        app.logger.error(f"Error al agregar paciente: {e}")
+        return jsonify({"error": str(e)}), 500
+
+
+
+
+        APP.js 
+        import React from "react";
+import './App.css';
+import Navbar from './components/Navbar';
+import Main from "./components/Main";
+import Footer from "./components/Footer";
+
+export default function App() {
+  return (
+    <div className="App">
+      <Navbar />
+      <Main />
+      <footer className="footer"> 
+        <Footer />
+      </footer>
+      
+    </div>
+    
+    
+  );
+}
+
+Ahora intentare configurar XAMPP para que se puede acceder a la base de datos desde otros ordenadores

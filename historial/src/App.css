@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  margin: center;
+  padding: center;
+}
+
+.App {
+  font-family: 'Roboto', sans-serif;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
+
+
+.footer {
+  background-color: #193d3d; /* Color consistente con la navbar */
+  color: #fff; /* Texto blanco para contraste */
+  padding: 20px;
+  text-align: center; /* Centrar el contenido del footer */
+  position: absolute; /* Opción 1: posición absoluta dentro de un contenedor relativo */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Si estás usando Flexbox en el contenedor principal */
+.body-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Asegúrate de que el footer se mueva hacia abajo automáticamente */
+.footer {
+  margin-top: auto;
+}

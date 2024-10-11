@@ -1,0 +1,31 @@
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome, faFolder, faWrench } from '@fortawesome/free-solid-svg-icons';
+import './Navbar.css';
+
+function Navbar() {
+  return (
+    <nav className="navbar">
+      <ul className="navbar-nav">
+        <li className="nav-item">
+        <a href='http://localhost:3001/'> 
+          <FontAwesomeIcon icon={faHome} />
+          </a>
+        </li>
+        <li className="nav-item">
+            <FontAwesomeIcon icon={faFolder} />
+        </li>
+        <li className="nav-item">
+          <FontAwesomeIcon icon={faWrench} />
+        </li>
+      </ul>
+      <div className="navbar-brand">
+        <a href="/" className="navbar-logo">
+          CLOST|R
+        </a>
+      </div>
+    </nav>
+  );
+}
+
+export default Navbar;
